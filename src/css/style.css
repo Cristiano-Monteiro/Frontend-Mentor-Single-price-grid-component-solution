@@ -1,0 +1,75 @@
+html{
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    /*Primary Colors*/
+    --cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --cyanV2: hsl(180, 61%, 51%);
+
+    /*Neutral Colors*/
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    font-size: 1rem;
+}
+
+body{
+    background-color: var(--Light-Gray);
+}
+
+main .presentationMessage, main .subscription, main .aboutPageContent{
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+main .presentationMessage{
+    background-color: white;
+}
+
+.presentationMessage h1{
+    color: var(--cyan);
+    margin-bottom: 1.5rem;
+}
+
+.presentationMessage h3{
+    color: var(--Bright-Yellow);
+    margin-bottom: 1rem;
+}
+
+.presentationMessage p{
+    color: var(--Grayish-Blue);
+}
+
+main .subscription, 
+.subscription button, 
+.aboutPageContent h3,
+.subscription span{
+    color: white;
+}
+
+main .subscription{
+    background-color: var(--cyan);
+}
+
+.subscription p, .aboutPageContent p{
+    color: var(--Light-Gray);
+}
+
+
+.subscription button{
+    background-color: var(--Bright-Yellow);
+    padding: 1rem 4rem;
+    border: none;
+}
+
+main .aboutPageContent{
+    background-color: var(--cyanV2);
+}
