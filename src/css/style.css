@@ -23,6 +23,12 @@ html{
 
 body{
     background-color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 60%;
 }
 
 main .presentationMessage, main .subscription, main .aboutPageContent{
