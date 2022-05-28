@@ -23,13 +23,15 @@ html{
 }
 
 body{
+    height: 100vh;
     background-color: var(--Light-Gray);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 main{
-    width: 60%;
+    width: 44%;
 }
 
 main .presentationMessage, main .subscription, main .aboutPageContent{
@@ -39,6 +41,7 @@ main .presentationMessage, main .subscription, main .aboutPageContent{
 
 main .presentationMessage{
     background-color: white;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .presentationMessage h1{
