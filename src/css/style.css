@@ -32,6 +32,12 @@ body{
 
 main{
     width: 44%;
+    display: grid;
+    grid-template-areas:
+        'box-1 box-1'
+        'box-2 box-3';
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr 1.2fr;
 }
 
 main .presentationMessage, main .subscription, main .aboutPageContent{
@@ -42,6 +48,7 @@ main .presentationMessage, main .subscription, main .aboutPageContent{
 main .presentationMessage{
     background-color: white;
     border-radius: 10px 10px 0px 0px;
+    grid-area: box-1;
 }
 
 .presentationMessage h1{
@@ -67,6 +74,7 @@ main .subscription,
 
 main .subscription{
     background-color: var(--cyan);
+    grid-area: box-2;
 }
 
 .subscription p, .aboutPageContent p{
@@ -82,4 +90,5 @@ main .subscription{
 
 main .aboutPageContent{
     background-color: var(--cyanV2);
+    grid-area: box-3;
 }
