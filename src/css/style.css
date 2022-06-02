@@ -72,9 +72,14 @@ main .subscription,
     color: white;
 }
 
+.subscription h3, .aboutPageContent h3{
+    margin-bottom: 18px;
+}
+
 main .subscription{
     background-color: var(--cyan);
     grid-area: box-2;
+    border-radius: 0px 0px 0px 10px;
 }
 
 .subscription p, .aboutPageContent p{
@@ -86,9 +91,25 @@ main .subscription{
     background-color: var(--Bright-Yellow);
     padding: 1rem 4rem;
     border: none;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.subscription span{
+    font-size: 2.3rem;
+}
+
+.subscription p:nth-child(1){
+    margin: 4% 0%;
+}
+
+.subscription p:nth-child(2){
+    margin: 4% 0%;
 }
 
 main .aboutPageContent{
     background-color: var(--cyanV2);
     grid-area: box-3;
+    border-radius: 0px 0px 10px 0px;
 }
