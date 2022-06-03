@@ -42,7 +42,6 @@ main{
 
 main .presentationMessage, main .subscription, main .aboutPageContent{
     padding: 2rem;
-    border: 1px solid black;
 }
 
 main .presentationMessage{
