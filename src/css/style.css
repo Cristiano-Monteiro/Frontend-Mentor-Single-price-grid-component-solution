@@ -31,7 +31,7 @@ body{
 }
 
 main{
-    width: 44%;
+    width: 43%;
     display: grid;
     grid-template-areas:
         'box-1 box-1'
@@ -42,6 +42,7 @@ main{
 
 main .presentationMessage, main .subscription, main .aboutPageContent{
     padding: 2rem;
+    font-size: 1.1vw;
 }
 
 main .presentationMessage{
@@ -88,27 +89,28 @@ main .subscription{
 
 .subscription button{
     background-color: var(--Bright-Yellow);
-    padding: 1rem 4rem;
+    padding: 1.35rem 4rem;
     border: none;
     border-radius: 7px;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2rem;
 }
 
 .subscription span{
-    font-size: 2.3rem;
-}
-
-.subscription p:nth-child(1){
-    margin: 4% 0%;
+    font-size: 2.5vw;
+    margin-right: 1rem;
 }
 
 .subscription p:nth-child(2){
-    margin: 4% 0%;
+    margin: 8% 0% 3% 0%;
+    display: flex;
+    align-items: center;
+    color: var(--cyanV2);
 }
 
 main .aboutPageContent{
     background-color: var(--cyanV2);
     grid-area: box-3;
     border-radius: 0px 0px 10px 0px;
+    line-height: 1.5rem;
 }
