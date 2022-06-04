@@ -31,7 +31,7 @@ body{
 }
 
 main{
-    width: 43%;
+    width: 50vw;
     display: grid;
     grid-template-areas:
         'box-1 box-1'
@@ -41,8 +41,7 @@ main{
 }
 
 main .presentationMessage, main .subscription, main .aboutPageContent{
-    padding: 2rem;
-    font-size: 1.1vw;
+    padding: 40px;
 }
 
 main .presentationMessage{
@@ -94,10 +93,11 @@ main .subscription{
     border-radius: 7px;
     width: 100%;
     margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 .subscription span{
-    font-size: 2.5vw;
+    font-size: 2rem;
     margin-right: 1rem;
 }
 
@@ -113,4 +113,24 @@ main .aboutPageContent{
     grid-area: box-3;
     border-radius: 0px 0px 10px 0px;
     line-height: 1.5rem;
+}
+
+
+@media screen and (max-width: 980px) {
+    main{
+        width: 40%;
+        grid-template-areas:
+            'box-1 box-1'
+            'box-2 box-2'
+            'box-3 box-3';
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    main .subscription{
+        border-radius: 0px;
+    }
+
+    main .aboutPageContent{
+        border-radius: 0px 0px 10px 10px;
+    }
 }
