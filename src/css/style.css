@@ -23,11 +23,9 @@ html{
 }
 
 body{
-    height: 100vh;
     background-color: var(--Light-Gray);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 
 main{
@@ -38,6 +36,7 @@ main{
         'box-2 box-3';
     grid-auto-columns: 1fr;
     grid-template-rows: 1fr 1.2fr;
+    margin: auto;
 }
 
 main .presentationMessage, main .subscription, main .aboutPageContent{
@@ -115,15 +114,17 @@ main .aboutPageContent{
     line-height: 1.5rem;
 }
 
-
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
     main{
-        width: 40%;
+        width: 70%;
         grid-template-areas:
             'box-1 box-1'
             'box-2 box-2'
             'box-3 box-3';
         grid-template-rows: repeat(3, 1fr);
+        margin-top: 300px;
+        margin-bottom: 300px;
+        height: 100vh;
     }
 
     main .subscription{
@@ -133,4 +134,4 @@ main .aboutPageContent{
     main .aboutPageContent{
         border-radius: 0px 0px 10px 10px;
     }
-}
+} */
