@@ -124,27 +124,35 @@ main .aboutPageContent{
     margin-bottom: 70px;
 }
 
+@media screen and (min-width: 570px) {
+    body{
+        display: flex;
+    }
 
-
-
-/* @media screen and (max-width: 980px) {
     main{
-        width: 70%;
         grid-template-areas:
             'box-1 box-1'
-            'box-2 box-2'
-            'box-3 box-3';
-        grid-template-rows: repeat(3, 1fr);
-        margin-top: 300px;
-        margin-bottom: 300px;
-        height: 100vh;
+            'box-2 box-3';
+        grid-auto-columns: 1fr 1fr;
     }
 
+    /* === All Sections === */
+    main .subscription, main .aboutPageContent{
+        margin-bottom: 0px;
+    }
+
+    /* === .presentationMessage === */
+    main .presentationMessage{
+        margin-top: 0%;
+    }
+
+    /* === .subscription === */
     main .subscription{
-        border-radius: 0px;
+        border-radius: 0px 0px 0px 10px;
     }
 
+    /* === .aboutPageContent === */
     main .aboutPageContent{
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 0px;
     }
-} */
+}
