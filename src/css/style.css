@@ -64,7 +64,7 @@ main .subscription,
 
 main .presentationMessage{
     background-color: white;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
     grid-area: box-1;
     line-height: 1.6rem;
     margin-top: 70px;
@@ -72,16 +72,17 @@ main .presentationMessage{
 
 .presentationMessage h1{
     color: var(--cyan);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.7rem;
 }
 
 .presentationMessage h3{
     color: var(--Bright-Yellow);
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
 }
 
 .presentationMessage p{
     color: var(--Grayish-Blue);
+    line-height: 2rem;
 }
 
 /* === .subscription === */
@@ -103,7 +104,7 @@ main .subscription{
 }
 
 .subscription span{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-right: 1rem;
 }
 
@@ -119,8 +120,8 @@ main .subscription{
 main .aboutPageContent{
     background-color: var(--cyanV2);
     grid-area: box-3;
-    border-radius: 0px 0px 10px 10px;
-    line-height: 1.5rem;
+    border-radius: 0px 0px 5px 5px;
+    line-height: 1.7rem;
     margin-bottom: 70px;
 }
 
@@ -148,17 +149,17 @@ main .aboutPageContent{
 
     /* === .subscription === */
     main .subscription{
-        border-radius: 0px 0px 0px 10px;
+        border-radius: 0px 0px 0px 5px;
     }
 
     /* === .aboutPageContent === */
     main .aboutPageContent{
-        border-radius: 0px 0px 10px 0px;
+        border-radius: 0px 0px 5px 0px;
     }
 }
 
 @media screen and (min-width: 636px) {
     main{
-        width: 46rem;
+        width: 48rem;
     }
 }
