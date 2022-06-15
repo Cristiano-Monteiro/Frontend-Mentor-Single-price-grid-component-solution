@@ -1,6 +1,5 @@
 html{
     height: 100vh;
-    font-size: 62.5%;
     font-family: 'Karla', sans-serif;
 }
 
@@ -19,12 +18,13 @@ html{
     --Light-Gray: hsl(204, 43%, 93%);
     --Grayish-Blue: hsl(218, 22%, 67%);
 
-    font-size: .78rem;
+    font-size: 62.5%;
 }
 
 body{
     background-color: var(--Light-Gray);
     height: 100vh;
+    font-size: 1.2rem;
 }
 
 main{
@@ -154,5 +154,11 @@ main .aboutPageContent{
     /* === .aboutPageContent === */
     main .aboutPageContent{
         border-radius: 0px 0px 10px 0px;
+    }
+}
+
+@media screen and (min-width: 636px) {
+    main{
+        width: 46rem;
     }
 }
