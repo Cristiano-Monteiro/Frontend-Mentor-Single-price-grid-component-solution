@@ -1,6 +1,7 @@
 html{
     height: 100vh;
     font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
 }
 
 *{
@@ -39,8 +40,6 @@ main{
     margin: auto;
 }
 
-/* === All Sections === */
-
 main .presentationMessage, main .subscription, main .aboutPageContent{
     padding: 30px;
 }
@@ -59,8 +58,6 @@ main .subscription,
 .subscription p, .aboutPageContent p{
     color: var(--Light-Gray);
 }
-
-/* === .presentationMessage === */
 
 main .presentationMessage{
     background-color: white;
@@ -84,8 +81,6 @@ main .presentationMessage{
     color: var(--Grayish-Blue);
     line-height: 2rem;
 }
-
-/* === .subscription === */
 
 main .subscription{
     background-color: var(--cyan);
@@ -115,8 +110,6 @@ main .subscription{
     color: var(--cyanV2);
 }
 
-/* === .aboutPageContent === */
-
 main .aboutPageContent{
     background-color: var(--cyanV2);
     grid-area: box-3;
@@ -125,41 +118,59 @@ main .aboutPageContent{
     margin-bottom: 70px;
 }
 
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 636px) {
     body{
         display: flex;
+        font-size: 1.6rem;
     }
 
     main{
+        width: 55rem;
         grid-template-areas:
-            'box-1 box-1'
-            'box-2 box-3';
+        'box-1 box-1'
+        'box-2 box-3';
         grid-auto-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.3fr;
     }
 
-    /* === All Sections === */
     main .subscription, main .aboutPageContent{
         margin-bottom: 0px;
     }
 
-    /* === .presentationMessage === */
+    main .presentationMessage, main .subscription, main .aboutPageContent{
+        padding: 45px;
+    }
+
     main .presentationMessage{
         margin-top: 0%;
     }
 
-    /* === .subscription === */
+    .presentationMessage p{
+        line-height: 2.5rem;
+    }
+
     main .subscription{
         border-radius: 0px 0px 0px 5px;
     }
 
-    /* === .aboutPageContent === */
+    .subscription button{
+        font-size: 2rem;
+        height: 9rem;
+    }
+
     main .aboutPageContent{
+        line-height: 2.1rem;
         border-radius: 0px 0px 5px 0px;
     }
 }
 
-@media screen and (min-width: 636px) {
+@media screen and (min-width: 768px) {
     main{
-        width: 48rem;
+        width: 66rem;
+    }
+
+    .subscription button{
+        margin-top: 4rem;
+        height: auto;
     }
 }
