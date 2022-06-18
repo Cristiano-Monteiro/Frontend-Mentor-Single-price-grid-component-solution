@@ -15,6 +15,15 @@
 - Solution URL: https://github.com/Cristiano-Monteiro/Frontend-Mentor-Single-price-grid-component-solution
 - Live Site URL: https://cristiano-monteiro.github.io/Frontend-Mentor-Single-price-grid-component-solution/
 
+## My-process / Meu processo
+### Built with / Construído com
+- Semantic HTML5 tags
+- Responsive Design
+- Mobile First Design
+- CSS Grid
+- CSS variables
+- CSS Media Queries
+
 ## Author / Autor
 - Frontend Mentor - [@Cristiano-Monteiro](https://www.frontendmentor.io/profile/Cristiano-Monteiro)
 
